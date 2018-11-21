@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         git \
         libzip-dev \
         zip \
+        unzip \
         libpq-dev \
         libicu-dev \
     && pecl install xdebug \

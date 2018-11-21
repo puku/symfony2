@@ -29,6 +29,7 @@ services:
     environment:
       XDEBUG_REMOTE_HOST: ${XDEBUG_REMOTE_HOST}
       PHP_IDE_CONFIG: serverName=${IDE_SERVER_NAME}
+      COMPOSER_ALLOW_SUPERUSER: 1
 
   postgres:
     container_name: symfony2-postgres
