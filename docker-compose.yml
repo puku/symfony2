@@ -24,6 +24,7 @@ services:
     volumes:
       - ./:/app
       - ./docker/etc/php/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+      - ./docker/etc/php/php.ini:/usr/local/etc/php/conf.d/php.ini
     working_dir: /app
     environment:
       XDEBUG_REMOTE_HOST: ${XDEBUG_REMOTE_HOST}
